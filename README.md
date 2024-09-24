@@ -50,7 +50,7 @@ Users should be able to:
 
 ### What I learned
 
-This was a class project to learn core concepts of Redux.
+This was a class project to learn strategies for complex state of Redux.
 
 ### Continued development
 
