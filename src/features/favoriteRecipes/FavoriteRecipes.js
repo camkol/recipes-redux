@@ -1,11 +1,12 @@
 import React from "react";
 import FavoriteButton from "../../components/FavoriteButton";
 import Recipe from "../../components/Recipe";
-const unfavoriteIconUrl =
-  "https://static-assets.codecademy.com/Courses/Learn-Redux/Recipes-App/icons/unfavorite.svg";
 
 // Import removeRecipe from favoriteRecipesSlice.js
 import { removeRecipe } from "./favoriteRecipesSlice.js";
+
+const unfavoriteIconUrl =
+  "https://static-assets.codecademy.com/Courses/Learn-Redux/Recipes-App/icons/unfavorite.svg";
 
 export const FavoriteRecipes = (props) => {
   // Extract favoriteRecipes and dispatch from props.

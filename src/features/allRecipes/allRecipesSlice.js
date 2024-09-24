@@ -1,4 +1,4 @@
-import allRecipesData from "../../../data.js";
+import allRecipesData from "../../data/data.js";
 
 export const loadData = () => {
   return {
