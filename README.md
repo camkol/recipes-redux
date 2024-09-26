@@ -40,6 +40,17 @@ Users should be able to:
 - `combineReducers()` is a [method](https://www.codecademy.com/resources/docs/general/method) provided by the `redux` library that accepts a collection of reducer functions and returns a `rootReducer` that implements the reducer composition pattern.
 - In a Redux application, slice reducers are often written in separate files. This pattern is known as [Redux Ducks](https://github.com/erikras/ducks-modular-redux).
 
+**Redux Toolkit**
+
+- **R**edux **T**ool**k**it (RTK) contains packages and functions that build in suggested best practices, simplify most Redux tasks, prevent common mistakes, and make it easier to write Redux applications.
+- RTK has a `createSlice()` function that will help us simplify our Redux reducer logic and actions.
+- `createSlice()` has one [parameter](https://www.codecademy.com/resources/docs/general/parameter), a configuration object, which we call `options`. In this lesson, we covered three object properties: `name`, `initialState`, and `reducers`. The configuration object has more properties which will be covered in the following lessons.
+- A case reducer is a [method](https://www.codecademy.com/resources/docs/general/method) that can update the state and will be executed when the corresponding action type is dispatched. This is similar to a case in a switch statement.
+- You can write code that “mutates” the state inside the case reducers passed to `createSlice()`, and Immer will safely and accurately return an immutably updated state.
+- `createSlice()` returns an object with the following properties: `name`, `reducer`, `actions`, and `caseReducers`.
+- We typically use a Redux community code convention called the “ducks” pattern when exporting the action creators and the reducer.
+- RTK has a `configureStore()` function that simplifies the store setup process. `configureStore()` wraps around the Redux core `createStore()` function and the `combineReducers()` function, and handles most of the store setup for us automatically.
+
 ### Built with
 
 - Semantic HTML5 markup
@@ -51,11 +62,13 @@ Users should be able to:
 
 ### What I learned
 
-This was a class project to learn strategies for complex state of Redux.
+This was a class project to learn strategies for complex state of Redux and Redux Toolkit.
 
 ### Continued development
 
-maybe use later
+- Update the application to include a user profile slice to keep track of the favorite recipes.
+- Add a new case reducer to handle adding user-created recipes.
+- Add a rating system to recipes so the user can “rank” their favorite recipes.
 
 ## Author
 
