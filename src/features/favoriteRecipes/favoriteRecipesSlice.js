@@ -16,6 +16,20 @@ export const favoriteRecipesSlice = createSlice({
   },
 });
 
+//  alternative
+// const options = {
+//   name: "favoriteRecipes",
+//   initialState: [],
+//   reducers: {
+//     addRecipe: (state, action) => {
+//       return [...state, action.payload];
+//     },
+//     removeRecipe: (state, action) => {
+//       return state.filter((recipe) => recipe.id !== action.payload.id);
+//     },
+//   },
+// };
+
 // Selectors
 ///////////////////////////////////////
 export const selectFavoriteRecipes = (state) => state.favoriteRecipes;
